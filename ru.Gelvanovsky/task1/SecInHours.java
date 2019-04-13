@@ -1,10 +1,10 @@
-﻿package ru.Gelvanovsky.task1;
+package ru.Gelvanovsky.task1;
 
 public class SecInHours {
     public static void main(String[] args){
-        int seconds=7200;
-        int hours;
-        hours=seconds/3600;
-        System.out.println("Количество часов "+hours);
-    }
+    int seconds=7200;
+    int hours;
+    hours=seconds/3600;
+    System.out.println("Полных часов "+hours);
+}
 }
