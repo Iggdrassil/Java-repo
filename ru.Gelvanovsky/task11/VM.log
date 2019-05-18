@@ -1,0 +1,5 @@
+2019-05-18 16:46:35,212 [INFO ][main ][   ru.Gelvanovsky.task11.Application] - Новая сессия
+2019-05-18 16:46:46,681 [WARN ][main ][ru.Gelvanovsky.task11.VendingMachine] - Предупреждение: попытка покупки при нехватке средств
+2019-05-18 16:46:58,329 [INFO ][main ][   ru.Gelvanovsky.task11.Application] - Новая сессия
+2019-05-18 16:47:06,642 [INFO ][main ][ru.Gelvanovsky.task11.VendingMachine] - Запрос несуществующего товара
+2019-05-18 16:47:35,444 [INFO ][main ][   ru.Gelvanovsky.task11.Application] - Новая сессия
