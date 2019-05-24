@@ -5,21 +5,28 @@ import java.io.File;
 public class Recursion {
     static  final File dir = new File("C:/Users/1/IdeaProjects/Java-learning/src/ru/Gelvanovsky");
     public static void main(String[] args) {
-        Recursion(dir);
+        Recursion(dir, 0);
     }
-    private static void Recursion(File dirs){
+    private static void Recursion(File dirs, int depth) {
         File[] dir = dirs.listFiles();
-        for (File directories:dir) {
-            if (directories.isFile()){
-                System.out.println("==========================================================");
-                System.out.println("Файл "+directories.getPath());
-                System.out.println("==========================================================");
-            }else {
-                System.out.println("==========================================================");
-                System.out.println("Директория "+directories.getPath());
-                System.out.println("==========================================================");
-                Recursion(directories);
+        depth++;
+        for (File directories : dir) {
+            if (directories.isFile()) {
+                if (depth == 2){
+                    System.out.println("        Файл: " + directories.getName());
+                }
+                if (depth >=3){
+                    System.out.println("    Файл: " + directories.getName());
+                }
+            } else {
+                if (depth == 1) {
+                    System.out.println("Директория: " + directories.getName());
+                }
+                if (depth == 2){
+                    System.out.println("    Директория: " + directories.getName());
+                    depth++;
+                }
+                Recursion(directories, 1);
             }
         }
-        }
-    }
+    }}
